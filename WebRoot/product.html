@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="/cake/">
+		<meta charset="UTF-8">
+		<title>商品展示</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script src="font/font_6h6sy2gzvxl/iconfont.js"></script>
+		<script src="js/nav.js?t=20194191855"></script>
+		<script src="js/product.js"></script>
+		<script src="js/opencake.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/all.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css?t=20194191855" />
+		<link rel="stylesheet" type="text/css" href="css/product.css?t=20194191855"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css?t=20194191855" />
+		<link rel="stylesheet" type="text/css" href="font/font_6h6sy2gzvxl/iconfont.css" />
+	</head>
+	<body>
+		<div id="body">
+			<div id="nav">
+				<div id="logo">yummy</div>
+				<div id="menu_btn"><a href="javascript:void(0);"><span class="icon iconfont">&#xe63c;</span></a></div>
+				<div id="account">
+					<ul class="first">
+						<li><a class="iconfont" href="javascript:void(0);">&#xe65a;<div class="triangle"></div></a>
+
+							<div class="second search">
+								<input type="search" name="query" />
+								<button type="button"><a href="product.html">搜索</a></button>
+							</div>
+						</li>
+						<li><a class="iconfont" href="javascript:void(0);">&#xe628;<div class="triangle"></div></a>
+							<div class="second login">
+								<div class="sign_in">
+									<label>邮箱</label><br />
+									<input type="text" name="id"  autocomplete="off"/>
+									<br />
+									<label>密码</label><br />
+									<input type="password" name="pwd" />
+									<br />
+									<button type="button">登录</button>
+								</div>
+								<div class="sign_up">
+									<span><a href="account.html">注册账号</a></span>
+									<span><a href="javascript:void(0);">忘记密码</a></span>
+								</div>
+								<div id="user_info">
+									<p id="user_name"></p>
+									<p id="user_email"></p>
+									<button type="button">下线</button>
+								</div>
+							</div>
+						</li>
+						<li><a class="iconfont" href="javascript:void(0);">&#xe61a;<div class="triangle"></div></a>
+							<div class="second cart">
+								<p>$9,990.00&nbsp;(6)</p>
+								<button type="button"><a href="checkout.html">购物车</a></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="menu">
+					<ul class="first">
+						<li><a href="home.html">首页</a>
+						</li>
+						<li><a href="javascript:void(0);">生日</a>
+							<ul class="second">
+								<li><a href="javascript:void(0);">关系</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">朋友</a></li>
+										<li><a href="javascript:void(0);">爱人</a></li>
+										<li><a href="javascript:void(0);">姐妹</a></li>
+										<li><a href="javascript:void(0);">兄弟</a></li>
+										<li><a href="javascript:void(0);">孩子</a></li>
+										<li><a href="javascript:void(0);">父母</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);">味道</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">巧克力</a></li>
+										<li><a href="javascript:void(0);">混合水果</a></li>
+										<li><a href="javascript:void(0);">奶油果糖</a></li>
+										<li><a href="javascript:void(0);">草莓</a></li>
+										<li><a href="javascript:void(0);">香草</a></li>
+										<li><a href="javascript:void(0);">无糖蛋糕</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);">主题</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">心形</a></li>
+										<li><a href="javascript:void(0);">卡通</a></li>
+										<li><a href="javascript:void(0);">动物</a></li>
+										<li><a href="javascript:void(0);">方形</a></li>
+										<li><a href="javascript:void(0);">圆形</a></li>
+										<li><a href="javascript:void(0);">相片</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);">重量</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">1KG</a></li>
+										<li><a href="javascript:void(0);">1.5KG</a></li>
+										<li><a href="javascript:void(0);">2KG</a></li>
+										<li><a href="javascript:void(0);">3KG</a></li>
+										<li><a href="javascript:void(0);">4KG</a></li>
+										<li><a href="javascript:void(0);">更大的</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="javascript:void(0);">婚礼</a>
+							<ul class="second">
+								<li><a href="javascript:void(0);">关系</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">朋友</a></li>
+										<li><a href="javascript:void(0);">爱人</a></li>
+										<li><a href="javascript:void(0);">姐妹</a></li>
+										<li><a href="javascript:void(0);">兄弟</a></li>
+										<li><a href="javascript:void(0);">孩子</a></li>
+										<li><a href="javascript:void(0);">父母</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);">味道</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">巧克力</a></li>
+										<li><a href="javascript:void(0);">混合水果</a></li>
+										<li><a href="javascript:void(0);">奶油果糖</a></li>
+										<li><a href="javascript:void(0);">草莓</a></li>
+										<li><a href="javascript:void(0);">香草</a></li>
+										<li><a href="javascript:void(0);">无糖蛋糕</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);">主题</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">心形</a></li>
+										<li><a href="javascript:void(0);">卡通</a></li>
+										<li><a href="javascript:void(0);">层数</a></li>
+										<li><a href="javascript:void(0);">方形</a></li>
+										<li><a href="javascript:void(0);">圆形</a></li>
+										<li><a href="javascript:void(0);">相片</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);">重量</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">1KG</a></li>
+										<li><a href="javascript:void(0);">1.5KG</a></li>
+										<li><a href="javascript:void(0);">2KG</a></li>
+										<li><a href="javascript:void(0);">3KG</a></li>
+										<li><a href="javascript:void(0);">4KG</a></li>
+										<li><a href="javascript:void(0);">更大的</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="javascript:void(0);">特殊优惠</a>
+							<ul class="second">
+								<li><a href="javascript:void(0);">关系</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">朋友</a></li>
+										<li><a href="javascript:void(0);">爱人</a></li>
+										<li><a href="javascript:void(0);">姐妹</a></li>
+										<li><a href="javascript:void(0);">兄弟</a></li>
+										<li><a href="javascript:void(0);">孩子</a></li>
+										<li><a href="javascript:void(0);">父母</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);">味道</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">巧克力</a></li>
+										<li><a href="javascript:void(0);">混合水果</a></li>
+										<li><a href="javascript:void(0);">奶油果糖</a></li>
+										<li><a href="javascript:void(0);">草莓</a></li>
+										<li><a href="javascript:void(0);">香草</a></li>
+										<li><a href="javascript:void(0);">无糖蛋糕</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);">主题</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">心形</a></li>
+										<li><a href="javascript:void(0);">卡通</a></li>
+										<li><a href="javascript:void(0);">动物</a></li>
+										<li><a href="javascript:void(0);">方形</a></li>
+										<li><a href="javascript:void(0);">圆形</a></li>
+										<li><a href="javascript:void(0);">相片</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);">重量</a>
+									<ul class="thirdly">
+										<li><a href="javascript:void(0);">1KG</a></li>
+										<li><a href="javascript:void(0);">1.5KG</a></li>
+										<li><a href="javascript:void(0);">2KG</a></li>
+										<li><a href="javascript:void(0);">3KG</a></li>
+										<li><a href="javascript:void(0);">4KG</a></li>
+										<li><a href="javascript:void(0);">更大的</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="javascript:void(0);">商店</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="ourcakes">
+				<h1>我们的蛋糕</h1>
+				<div id="cakes">
+					<div class="cake">
+						<img src="img/m1.png" >
+						<p>name</p>
+						<p>$2000.00</p>
+						<p><span>$2300.00</span><span>[15% off]</span></p>
+						<div>
+							<input type="number" name="qty" value="1" />
+							<button type="button">添加</button>
+						</div>
+						<div class="view">
+							<p>view</p>
+						</div>
+					</div>
+					<div class="cake">
+						<img src="img/m2.png" >
+						<p>name</p>
+						<p>$2000.00</p>
+						<p><span>$2300.00</span><span>[15% off]</span></p>
+						<div>
+							<input type="number" name="qty" value="1" />
+							<button type="button">添加</button>
+						</div>
+						<div class="view">
+							<p>view</p>
+						</div>
+					</div>
+					<div class="cake">
+						<img src="img/m3.png" >
+						<p>name</p>
+						<p>$2000.00</p>
+						<p><span>$2300.00</span><span>[15% off]</span></p>
+						<div>
+							<input type="number" name="qty" value="1" />
+							<button type="button">添加</button>
+						</div>
+						<div class="view">
+							<p>view</p>
+						</div>
+					</div>
+					<div class="cake">
+						<img src="img/m4.png" >
+						<p>name</p>
+						<p>$2000.00</p>
+						<p><span>$2300.00</span><span>[15% off]</span></p>
+						<div>
+							<input type="number" name="qty" value="1" />
+							<button type="button">添加</button>
+						</div>
+						<div class="view">
+							<p>view</p>
+						</div>
+					</div>
+					<div class="cake">
+						<img src="img/m5.png" >
+						<p>name</p>
+						<p>$2000.00</p>
+						<p><span>$2300.00</span><span>[15% off]</span></p>
+						<div>
+							<input type="number" name="qty" value="1" />
+							<button type="button">添加</button>
+						</div>
+						<div class="view">
+							<p>view</p>
+						</div>
+					</div>
+					<div class="cake">
+						<img src="img/m6.png" >
+						<p>name</p>
+						<p>$2000.00</p>
+						<p><span>$2300.00</span><span>[15% off]</span></p>
+						<div>
+							<input type="number" name="qty" value="1" />
+							<button type="button">添加</button>
+						</div>
+						<div class="view">
+							<p>view</p>
+						</div>
+					</div>
+					<div class="cake">
+						<img src="img/m7.png" >
+						<p>name</p>
+						<p>$2000.00</p>
+						<p><span>$2300.00</span><span>[15% off]</span></p>
+						<div>
+							<input type="number" name="qty" value="1" />
+							<button type="button">添加</button>
+						</div>
+						<div class="view">
+							<p>view</p>
+						</div>
+					</div>
+					<div class="cake">
+						<img src="img/m8.png" >
+						<p>name</p>
+						<p>$2000.00</p>
+						<p><span>$2300.00</span><span>[15% off]</span></p>
+						<div>
+							<input type="number" name="qty" value="1" />
+							<button type="button">添加</button>
+						</div>
+						<div class="view">
+							<p>view</p>
+						</div>
+					</div>
+					<div class="cake">
+						<img src="img/m9.png" >
+						<p>name</p>
+						<p>$2000.00</p>
+						<p><span>$2300.00</span><span>[15% off]</span></p>
+						<div>
+							<input type="number" name="qty" value="1" />
+							<button type="button">添加</button>
+						</div>
+						<div class="view">
+							<p>view</p>
+						</div>
+					</div>
+				</div>
+				<div id="filter">
+					<div id="categories">
+						<p>类别</p>
+						<ul>
+							<li><a href="javascript:void(0);">普通蛋糕</a>
+								<ul>
+									<li><a href="javascript:void(0);">卡萨塔冰淇淋</a></li>
+									<li><a href="javascript:void(0);">奶油蛋糕</a></li>
+									<li><a href="javascript:void(0);">椰子蛋糕</a></li>
+									<li><a href="javascript:void(0);">纸托蛋糕</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);">特殊蛋糕</a>
+								<ul>
+									<li><a href="javascript:void(0);">卡萨塔冰淇淋</a></li>
+									<li><a href="javascript:void(0);">奶油蛋糕</a></li>
+									<li><a href="javascript:void(0);">椰子蛋糕</a></li>
+									<li><a href="javascript:void(0);">纸托蛋糕</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);">无糖蛋糕</a>
+								<ul>
+									<li><a href="javascript:void(0);">卡萨塔冰淇淋</a></li>
+									<li><a href="javascript:void(0);">奶油蛋糕</a></li>
+									<li><a href="javascript:void(0);">椰子蛋糕</a></li>
+									<li><a href="javascript:void(0);">纸托蛋糕</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);">2-3层蛋糕</a>
+								<ul>
+									<li><a href="javascript:void(0);">2层蛋糕</a></li>
+									<li><a href="javascript:void(0);">3层蛋糕</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="discounts">
+						<p>折扣</p>
+						<div class="scrollarea">
+							<div class="content">
+								<p><input type="checkbox" name="discounts" value="60%-50%(7)" />60%-50%(7)</p>
+								<p><input type="checkbox" name="discounts" value="50%-40%(2)" />50%-40%(2)</p>
+								<p><input type="checkbox" name="discounts" value="40%-30%(5)" />40%-30%(5)</p>
+								<p><input type="checkbox" name="discounts" value="30%-20%(7)" />30%-20%(7)</p>
+								<p><input type="checkbox" name="discounts" value="20%-10%(7)" />20%-10%(7)</p>
+								<p><input type="checkbox" name="discounts" value="10%-5%(7)" />10%-5%(7)</p>
+								<p><input type="checkbox" name="discounts" value="5%-0%(7)" />5%-0%(7)</p>
+							</div>
+						</div>
+					</div>
+					<div id="price">
+						<p>价格</p>
+						<div class="pricebar">
+							<div class="bar">
+								
+							</div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<p>$<span class="pre">0</span>-$<span class="next">2000</span></p>
+					</div>
+					<div id="flavour">
+						<p>口味</p>
+						<div class="scrollarea">
+							<div class="content">
+								<p><input type="checkbox" name="flavour" value="香草味" />香草味</p>
+								<p><input type="checkbox" name="flavour" value="巧克力味" />巧克力味</p>
+								<p><input type="checkbox" name="flavour" value="奶油糖果味" />奶油糖果味</p>
+								<p><input type="checkbox" name="flavour" value="草莓味" />草莓味</p>
+								<p><input type="checkbox" name="flavour" value="黑森林味" />黑森林味</p>
+								<p><input type="checkbox" name="flavour" value="黑森林味" />黑森林味</p>
+								<p><input type="checkbox" name="flavour" value="黑森林味" />黑森林味</p>
+							</div>
+						</div>
+					</div>
+					<div id="weight">
+						<p>重量</p>
+						<div class="scrollarea">
+							<div class="content">
+								<p><input type="checkbox" name="weight" value="1kg" />1KG</p>
+								<p><input type="checkbox" name="weight" value="2kg" />2KG</p>
+								<p><input type="checkbox" name="weight" value="3kg" />3KG</p>
+								<p><input type="checkbox" name="weight" value="4kg" />4KG</p>
+								<p><input type="checkbox" name="weight" value="5kg" />5KG</p>
+							</div>
+							
+						</div>
+					</div>
+					<div id="color">
+						<p>颜色</p>
+						<div class="scrollarea">
+							<div class="content">
+								<p><input type="checkbox" name="color" value="白色" />白色</p>
+								<p><input type="checkbox" name="color" value="粉色" />粉色</p>
+								<p><input type="checkbox" name="color" value="金色" />金色</p>
+								<p><input type="checkbox" name="color" value="银色" />银色</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="foot">
+				<div id="more">
+					<ul class="first">
+						<li>公司
+							<ul class="second">
+								<li><a href="javascript:void(0);">产品</a></li>
+								<li><a href="javascript:void(0);">工作地点</a></li>
+								<li><a href="javascript:void(0);">团队</a></li>
+								<li><a href="javascript:void(0);">事件</a></li>
+								<li><a href="javascript:void(0);">经销商</a></li>
+							</ul>
+						</li>
+						<li>服务
+							<ul class="second">
+								<li><a href="javascript:void(0);">支持</a></li>
+								<li><a href="javascript:void(0);">常见问题</a></li>
+								<li><a href="javascript:void(0);">保修</a></li>
+								<li><a href="javascript:void(0);">联系我们</a></li>
+							</ul>
+						</li>
+						<li>订单
+							<ul class="second">
+								<li><a href="javascript:void(0);">订单状态</a></li>
+								<li><a href="javascript:void(0);">航运政策</a></li>
+								<li><a href="javascript:void(0);">退换政策</a></li>
+								<li><a href="javascript:void(0);">电子礼品卡</a></li>
+							</ul>
+						</li>
+						<li>内部
+							<ul class="second">
+								<li><a href="javascript:void(0);">隐私</a></li>
+								<li><a href="javascript:void(0);">条款</a></li>
+								<li><a href="javascript:void(0);">约束</a></li>
+								<li><a href="javascript:void(0);">社会</a></li>
+								<li><a href="javascript:void(0);">责任</a></li>
+							</ul>
+						</li>
+						<li>联系我们
+							<ul class="second">
+								<li><img src="img/i1.png" /><a href="javascript:void(0);">通过 Facebook</a></li>
+								<li><img src="img/i2.png" /><a href="javascript:void(0);">通过 Twitter</a></li>
+								<li><img src="img/i3.png" /><a href="javascript:void(0);">通过 Google-Plus</a></li>
+								<li><img src="img/i4.png" /><a href="javascript:void(0);">通过 Pinterest</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

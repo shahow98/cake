@@ -1,0 +1,286 @@
+#ourcakes{
+	width: 100%;
+	height: 1200px;
+}
+
+#ourcakes h1{
+	width: 100%;
+	height: 100px;
+	line-height: 80px;
+	font-size: 60px;
+	color: rgb(240,120,24);
+}
+
+#cakes{
+	float: right;
+	width: 78%;
+	height: 1100px;
+}
+
+#cakes .cake{
+	position: relative;
+	float: left;
+	width: 33.3%;
+	height: 360px;
+}
+
+#cakes .cake img{
+	width: 70%;
+	height: 72%;
+	
+	cursor: pointer;
+}
+
+#cakes .cake p{
+	margin: 0 auto;
+	width: 70%;
+	height: auto;
+	text-align: left;
+	color: rgb(153,178,216);
+}
+
+#cakes .cake p:nth-child(3){
+	color: black;
+}
+
+#cakes .cake p:nth-child(4) span:first-child{
+	text-decoration: line-through;
+	color: rgb(153,178,216);
+}
+
+#cakes .cake p:nth-child(4) span:last-child{
+	color: rgb(240,120,24);
+}
+
+#cakes .cake div:nth-child(5){
+	margin: 0 auto;
+	width: 70%;
+	height: 24px;
+}
+
+#cakes .cake input{
+	float: left;
+	width: 40%;
+	height: 100%;
+}
+
+#cakes .cake button{
+	float: right;
+	width: 36%;
+	height: 100%;
+	color: #FFFFFF;
+	background-color: rgb(240,120,24);
+	border: 1px solid transparent;
+	outline: none;
+}
+
+#cakes .cake .view{
+	position: absolute;
+	top: 50%;
+	display: none;
+	width: 100%;
+	height: 10%;
+	opacity: 0.5;
+	background-color: black;
+}
+
+#cakes .cake .view > p{
+	text-align: center;
+}
+
+#filter{
+	float: left;
+	width: 22%;
+	height: 1100px;
+}
+
+#filter > div{
+	width: 100%;
+	height: auto;
+}
+
+#filter > div > p{
+	margin-left: 30%;
+	width: 70%;
+	height: 30px;
+	text-align: left;
+	color: rgb(93,75,51);
+	border-top: 1px solid rgb(238,238,238);
+}
+
+#categories ul ul{
+	display: none;
+	width: 100%;
+	height: auto;
+	text-align: left;
+}
+
+#categories ul ul > li{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#categories ul{
+	display: block;
+	margin-left: 30%;
+	width: 70%;
+	height: auto;
+	text-align: left;
+}
+
+#categories ul > li{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#categories ul > li a{
+	color: rgb(153,178,216);
+}
+
+.scrollarea{
+	position: relative;
+	overflow: hidden;
+	margin-left: 30%;
+	width: 70%;
+	height: 120px;
+}
+
+.scrollarea .content{
+	position: absolute;
+	top: 0;
+	right: -17px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 108%;
+	height: 120px;
+}
+
+.scrollarea .content > p input{
+	margin-right: 10%;
+}
+
+.scrollarea .content > p{
+	width: 100%;
+	height: 30px;
+	text-align: left;
+	color: rgb(153,178,216);
+}
+
+#price .pricebar{
+	position: relative;
+	margin-left: 30%;
+	width: 70%;
+	height: 30px;
+	border: 1px solid beige;
+}
+
+#price .pricebar .bar{
+	position: absolute;
+	top: 8px;
+	width: 100%;
+	height: 50%;
+	background-color: rgb(149,165,166);
+	z-index: 10;
+}
+
+ #price .pricebar div:nth-child(2){
+	position: absolute;
+	top: 8px;
+	width: 0;
+	height: 50%;
+	background-color: rgb(44,62,80);
+	z-index: 100;
+}
+
+#price .pricebar > div:nth-child(3){
+	position: absolute;
+	top: 7px;
+	width: 10%;
+	height: 60%;
+	border-radius: 10px;
+	background: rgb(240,120,24);
+	z-index: 101;
+	cursor: pointer;
+}
+
+#price .pricebar div:nth-child(4){
+	position: absolute;
+	top: 8px;
+	left: 8%;
+	width: 84%;
+	height: 50%;
+	background-color: rgb(44,62,80);
+	z-index: 100;
+}
+
+#price .pricebar > div:nth-child(5){
+	position: absolute;
+	top: 7px;
+	right: 0;
+	width: 10%;
+	height: 60%;
+	border-radius: 10px;
+	background: rgb(240,120,24);
+	z-index: 101;
+	cursor: pointer;
+}
+
+#price .pricebar div:nth-child(6){
+	position: absolute;
+	top: 8px;
+	width: 0;
+	height: 50%;
+	background-color: rgb(44,62,80);
+	z-index: 100;
+} 
+
+#price p:last-child{
+	color: black;
+	text-align: center;
+}
+
+#price p:last-child > span{
+	color: rgb(149,165,166);
+}
+
+@media only screen and (max-width: 800px) {
+	#ourcakes{
+		width: 100%;
+		height: auto;
+	}
+	#cakes{
+		float: none;
+		width: 100%;
+		height: 1100px;
+	}
+	#filter{
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+	#filter > div > p{
+		margin-left: 0;
+		width: 100%;
+	}
+	#filter ul{
+		margin-left: 30%;
+		width: 100%;
+	}
+	
+	.scrollarea .content > p input{
+		position: relative;
+
+		margin-right: 0;
+		margin-left: 2%;
+		width: 12%;
+		height: 20px;
+		z-index: 100;
+	}
+	
+	#price .pricebar{
+		margin-left: 0;
+		width: 100%;
+	}
+}

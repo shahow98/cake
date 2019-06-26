@@ -1,0 +1,59 @@
+#newaccount{
+	display: block;
+	width: 100%;
+	height: 500px;
+}
+
+#newaccount h1{
+	width: 100%;
+	height: 60px;
+	color: rgb(240,120,24);
+}
+
+#newaccount label{
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	height: 30px;
+	text-align: left;
+}
+
+#newaccount label span{
+	color: red;
+}
+
+#newaccount input{
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	height: 32px;
+}
+
+#newaccount button{
+	float: right;
+	margin-top: 10px;
+	margin-right: 30%;
+	width: 10%;
+	height: 30px;
+	
+	background-color: rgb(240,120,24);
+	border: 1px solid transparent;
+	outline: none;
+}
+
+#success{
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	display: none;
+	margin: 0 auto;
+	width: 260px;
+	height: 100px;
+	background-color: #B3D4FC;
+	border-radius: 10px;
+}
+#success p{
+	width: 100%;
+	height: 100%;
+	line-height: 100px;
+}

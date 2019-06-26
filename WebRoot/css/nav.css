@@ -1,0 +1,459 @@
+#nav {
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background-color: rgb(93, 75, 51);
+	z-index: 10;
+}
+
+#nav a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+}
+
+#menu_btn {
+	display: none;
+}
+
+#logo {
+	float: left;
+	width: 12%;
+	height: 60px;
+	font-family: Marvel-Regular;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+}
+
+#menu {
+	display: block;
+	float: left;
+	width: 60%;
+	height: 60px;
+}
+
+#menu .first {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 60px;
+
+}
+
+#menu .first>li {
+	display: block;
+	float: left;
+	width: 20%;
+	height: 60px;
+	line-height: 60px;
+	/* 鼠标悬浮时,背景色过渡效果 */
+	transition: background-color 1.5s ease 0s;
+	-moz-transition: background-color 1.5s ease 0s;
+	-webkit-transition: background-color 1.5s ease 0s;
+	-moz-transition: background-color 1.5s ease 0s;
+}
+
+#menu .first>li:hover {
+	/* 鼠标悬浮时改变背景色 */
+	background-color: rgb(240, 120, 24);
+}
+
+#menu .first :hover>.second {
+	/* 当鼠标在一级菜单上时，显示二级子菜单 */
+	display: block;
+}
+
+#menu .first .second {
+	position: absolute;
+	top: 60px;
+	/* 设置二级子菜单隐藏状态 */
+	display: none;
+	width: 88%;
+	height: 260px;
+	border: 1px solid rgb(198, 201, 202);
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 10px 0px #888888;
+	z-index: 100;
+}
+
+#menu .first .second>li {
+	display: block;
+	float: left;
+	width: 25%;
+	height: 60px;
+}
+
+#menu .first .second>li>a {
+	color: rgb(240, 120, 24);
+}
+
+#menu .first .second .thirdly {
+	position: absolute;
+	top: 60px;
+	display: block;
+	width: 25%;
+}
+
+#menu .first .second .thirdly>li {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+
+#menu .first .second .thirdly>li>a {
+	color: rgb(194, 235, 255);
+}
+
+#account {
+	float: right;
+	width: 28%;
+	height: 60px;
+}
+
+#account .first {
+	position: relative;
+	display: block;
+	float: right;
+	width: 90%;
+	height: 60px;
+}
+
+#account .first>li {
+
+	display: block;
+	float: left;
+	width: 33%;
+	height: 60px;
+
+	transition: background-color 1.5s ease 0s;
+	-moz-transition: background-color 1.5s ease 0s;
+	-webkit-transition: background-color 1.5s ease 0s;
+	-moz-transition: background-color 1.5s ease 0s;
+}
+
+#account .first>li>a {
+	position: relative;
+	line-height: 60px;
+	font-size: 25px;
+}
+
+#account .triangle {
+	position: absolute;
+	display: none;
+	top: 41px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid #FFFFFF;
+	border-top: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	z-index: 200;
+}
+
+/* #account .first li:hover .triangle {
+	
+} */
+
+#account .first li:hover {
+	background-color: rgb(240, 120, 24);
+}
+
+/* #account .first li:hover>.second {
+	display: none;
+} */
+
+#account .first .second {
+	position: absolute;
+	top: 60px;
+	right: 0;
+	display: none;
+	width: 30%;
+	height: 60px;
+	border: 1px solid rgb(198, 201, 202);
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 10px 0px #888888;
+	z-index: 100;
+}
+
+#account .first .search {
+	width: 400px;
+	height: 100px;
+}
+
+#account .first .search input {
+	float: left;
+	margin-top: 28px;
+	margin-left: 18px;
+	width: 74%;
+	height: 40%;
+
+	border: 1px solid rgb(240, 120, 24);
+}
+
+#account .first .search button {
+	float: left;
+	margin-top: 28px;
+	width: 16%;
+	height: 40%;
+
+	color: #FFFFFF;
+	border: 1px solid transparent;
+	outline: none;
+	background: rgb(240, 120, 24);
+}
+
+#account .first .search button > a{
+	line-height: 38px;
+}
+
+#account .first .login {
+	width: 340px;
+	height: 300px;
+
+}
+
+#account .first .login .sign_in {
+	width: 100%;
+	height: 80%;
+	text-align: left;
+}
+
+#account .first .login .sign_in label {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: 10px;
+}
+
+#account .first .login .sign_in input {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: 30px;
+}
+
+#account .first .login .sign_in button {
+	display: block;
+	margin: 0 auto;
+	margin-top: 4px;
+	width: 80%;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: rgb(240, 120, 24);
+	border: 1px solid transparent;
+	outline: none;
+}
+
+#account .first .login .sign_up {
+	width: 100%;
+	height: 20%;
+}
+
+#account .first .login .sign_up span {
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+#account .first .login .sign_up span a {
+	color: rgb(159, 154, 151);
+}
+
+#account .first .login .sign_up span:nth-child(1) a:nth-child(1) {
+	color: rgb(240, 120, 24);
+	border-right: 1px solid rgb(240, 120, 24);
+}
+
+#user_info{
+	display: none;
+	width: 100%;
+	height: 102px;
+}
+
+#user_info > p{
+	width: 100%;
+	height: 30px;
+	padding-left: 10%;
+	text-align: left;
+}
+
+#user_info > button{
+	display: block;
+	margin-left: 60%;
+	margin-top: 4px;
+	width: 30%;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: rgb(240, 120, 24);
+	border: 1px solid transparent;
+	outline: none;
+}
+
+
+
+#account .first .cart {
+	width: 134px;
+	height: 78px;
+}
+
+#account .first .cart>p {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+
+#account .first .cart button {
+	display: block;
+	margin: 0 auto;
+	margin-top: 36px;
+	width: 80%;
+	height: 40%;
+
+	color: #FFFFFF;
+	background-color: rgb(240, 120, 24);
+	border: 1px solid transparent;
+	outline: none;
+}
+
+#account .first .cart button a{
+	line-height: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+	#logo{
+		float: none;
+		/* logo居中 */
+		margin: 0 auto;
+	}
+	
+	#account{
+		/* 用户功能模块靠右 */
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	
+	#menu_btn {
+		position: absolute;
+		top: 0;
+		left: -4%;
+		/* 显示菜单按钮 */
+		display: block;
+		float: left;
+		width: 20%;
+		height: 60px;
+	}
+
+	#menu_btn a {
+		display: block;
+		margin-top: 10%;
+		margin-left: 26%;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		border-radius: 5px;
+		/* 设置鼠标悬浮时,显示菜单按钮的背景色和字体色过渡效果 */
+		transition: background-color 1.5s ease 0s;
+		-moz-transition: background-color 1.5s ease 0s;
+		-webkit-transition: background-color 1.5s ease 0s;
+		-moz-transition: background-color 1.5s ease 0s;
+		transition: color 0.5s ease 0s;
+		-moz-transition: color 0.5s ease 0s;
+		-webkit-transition: color 0.5s ease 0s;
+		-moz-transition: color 0.5s ease 0s;
+	}
+
+	#menu_btn span {
+		font-size: 25px;
+		line-height: 44px;
+		color: #FFFFFF;
+	}
+
+	#menu_btn a:hover {
+		background-color: rgb(240, 120, 24);
+		color: #000000;
+	}
+
+	#menu {
+		display: none;
+		float: left;
+		width: 100%;
+		height: auto;
+	}
+	
+	#menu .first{
+		position: absolute;	
+		display: block;
+		width: 100%;
+		height: auto;
+		background-color: rgb(93, 75, 51);
+	}
+	
+	#menu .first > li{
+		/* 更改菜单选项排版 */
+		width: 100%;
+		height: auto;
+	}
+	
+	#menu .first > li:hover .second{
+		display: block;
+	}
+	
+	#menu .first .second{
+		position: relative;
+		top: 0px;
+		display: none;
+		/* 隐藏二级子菜单 */
+		width: 100%;
+		height: auto;
+		background-color: #FFFFFF;
+	}
+	
+	#menu .first .second > li{
+		position: relative;
+		width: 100%;
+		height: auto;
+		background-color: #FFFFFF;
+		box-shadow: 0px 0px 10px 0px #888888;
+	}
+	
+	#menu .first .second > li:hover .thirdly{
+		display: block;
+	}
+	
+	#menu .first .second .thirdly{
+		position: relative;
+		top: 0px;
+		/* 隐藏三级子菜单 */
+		display: none;	
+		width: 100%;
+		height: 360px;
+		background-color: rgb(199,179,152);
+		box-shadow: 0px 0px 10px 0px #888888;
+	}
+	
+	#menu .first .second .thirdly > li{
+		display: block;
+		/* 更改三级子菜单排版 */
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		box-shadow: 0px 0px 10px 0px #888888;
+		
+		transition: background-color 1s ease 0s;
+		-moz-transition: background-color 1s ease 0s;
+		-webkit-transition: background-color 1s ease 0s;
+		-moz-transition: background-color 1s ease 0s;
+	}
+	
+	#menu .first .second .thirdly > li:hover{
+		background-color: rgb(240,120,24);
+	}
+}

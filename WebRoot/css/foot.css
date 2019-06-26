@@ -1,0 +1,68 @@
+#foot{
+	width: 100%;
+	height: 300px;
+}
+#more {
+	width: 100%;
+	height: 100%;
+}
+#more .first{
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+}
+#more .first > li{
+	position: relative;
+	display: block;
+	float: left;
+	width: 18%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 28px;
+	color: rgb(240,120,24);
+}
+#more .first > li:last-child{
+	width: 22%;
+}
+#more .first .second{
+	position: absolute;
+	top: 60px;
+	display: block;
+	width: 100%;
+	height: 240px;
+}
+#more .first .second > li{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+}
+#more .first .second > li > a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: rgb(161,161,161);
+}
+#more .first > li:last-child .second li > a{
+	float: right;
+	width: 80%;
+	height: 100%;
+	text-align: left;
+}
+#more .first > li:last-child .second li > img{
+	margin: 0 auto;
+	margin-top: 4px;
+	width: 10%;
+	height: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+	#more .first > li{
+		font-size: 20px;
+	}
+	#more .first .second > li > a {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,333 @@
+#ad{
+	width: 100%;
+	height: 420px;
+}
+#ad .circulation{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(242,246,247);
+}
+#ad .circulation h1{
+	position: absolute;
+	top: 120px;
+	display: block;
+	margin-left: 20%;
+	width: 200px;
+	height: 40px;
+	color: rgb(93,75,51);
+}
+#ad .circulation span{
+	position: absolute;
+	top: 160px;
+	display: block;
+	margin-left: 20%;
+	width: 200px;
+	height: 40px;
+	color: rgb(240,120,24);
+}
+#ad .circulation button{
+	position: absolute;
+	top: 240px;
+	display: block;
+	margin-left: 24%;
+	width: 100px;
+	height: 40px;
+	color: rgb(93,75,51);
+	border: 5px solid rgb(93,75,51);
+	outline: none;
+	background-color: rgb(242,246,247);
+}
+#ad .circulation img{
+	display: block;
+	float: right;
+	margin-right: 10%;
+	width: 500px;
+	height: 100%;
+}
+#exhibition{
+	width: 100%;
+	height: 1220px;
+}
+#exhibition .container{
+	display: grid;
+	margin: 0 auto;
+	margin-top: 2%;
+	width: 90%;
+	height: 96%;
+	/* 将该容器划分为3*13(行*列)的网格 */
+	grid-template-columns: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+    grid-template-rows: 390px 390px 390px;
+}
+#exhibition .container .cake:hover{
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px #888888;
+	z-index: 100;
+}
+#exhibition .container .cake:nth-child(1){
+	/* 占用第一列0~9行 */
+	grid-column:1/9;
+}
+#exhibition .container .cake:nth-child(1) > div:first-child{
+	width: 92%;
+}
+#exhibition .container .cake:nth-child(1) label{
+	margin-left: 4%;
+}
+#exhibition .container .cake:nth-child(1) span{
+	margin-right: 4%;
+}
+#exhibition .container .cake:nth-child(1) > div > div a{
+	left: -1%;
+}
+#exhibition .container .cake:nth-child(1) > div > div button{
+	right: -1%;
+}
+#exhibition .container .cake:nth-child(1) .start{
+	margin-left: -4%;
+	width: 16%;
+}
+#exhibition .container .cake:nth-child(2){
+	/* 占用第一列9~13行 */
+	grid-column:9/13;
+}
+#exhibition .container .cake:nth-child(2) .start{
+	margin-left: -8%;
+	width: 32%;
+}
+#exhibition .container .cake:nth-child(3){
+	/* 占用第二列1~4行 */
+	grid-column:1/4;	
+}
+#exhibition .container .cake:nth-child(4){
+	/* 占用第二列4~7行 */
+	grid-column:4/7;
+}
+#exhibition .container .cake:nth-child(5){
+	/* 占用第二列7~10行 */
+	grid-column:7/10;
+}
+#exhibition .container .cake:nth-child(6){
+	/* 占用第二列10~13行 */
+	grid-column:10/13;
+}
+#exhibition .container .cake:nth-child(7){
+	/* 占用第三列1~4行 */
+	grid-column:1/4;
+}
+#exhibition .container .cake:nth-child(8){
+	/* 占用第三列4~7行 */
+	grid-column:4/7;
+}
+#exhibition .container .cake:nth-child(9){
+	/* 占用第三列7~10行 */
+	grid-column:7/10;
+}
+#exhibition .container .cake:nth-child(10){
+	/* 占用第三列10~13行 */
+	grid-column:10/13;
+}
+#exhibition .container .cake div:first-child{
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	height: 80%;
+}
+#exhibition .container .cake > div:first-child img{
+	display: block;
+	margin-top: 10px;
+	width: 100%;
+	height: 100%;
+	
+	cursor: pointer;
+	border: 2px solid rgb(242, 246, 247);
+	border-radius: 10px;
+}
+#exhibition .container .cake > div:first-child > div{
+	/*鼠标悬浮时，显示view栏*/
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	width: 100%;
+	height: 0;
+	opacity: 0.5;
+	background-color: #000000;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-left: 2px solid rgb(242, 246, 247);
+	border-right: 2px solid rgb(242, 246, 247);
+	border-bottom: 2px solid rgb(242, 246, 247);
+	transition: height 1.5s ease 0s;
+	-moz-transition: height 1.5s ease 0s;
+	-webkit-transition: height 1.5s ease 0s;
+	-moz-transition:  height 1.5s ease 0s;
+}
+#exhibition .container .cake > div:first-child > div a{
+	position: absolute;
+	bottom: 12%;
+	display: none;
+	width: 10%;
+	height: 0;
+	color: transparent;
+}
+#exhibition .container .cake > div:first-child > div span{
+	position: absolute;
+	bottom: 28%;
+	left: 10%;
+	display: none;
+	width: 10%;
+	height: 0;
+	color: transparent;
+}
+#exhibition .container .cake > div:first-child > div button{
+	position: absolute;
+	bottom: 12%;
+	right: 4%;
+	display: none;
+	width: 40%;
+	height: 0;
+	color: transparent;
+	background-color: rgb(240,120,24);
+	border: 1px solid transparent;
+	outline: none;
+}
+#exhibition .container .cake > div:first-child:hover > div a{
+	display: block;
+	height: 30%;
+	color: #FFFFFF;
+}
+#exhibition .container .cake > div:first-child:hover > div span{
+	display: block;
+	height: 20%;
+	color: #FFFFFF;
+}
+#exhibition .container .cake > div:first-child:hover > div button{
+	display: block;
+	height: 46%;
+	color: #FFFFFF;
+}
+#exhibition .container .cake > div:first-child:hover > div{
+	height: 18%;
+}
+#exhibition .container .cake label{
+	display: block;
+	margin-top: 10px;
+	margin-left: 10%;
+	float: left;
+}
+#exhibition .container .cake span{
+	display: block;	
+	margin-top: 30px;
+	margin-right: 10%;
+	float: right;
+	color: rgb(172,172,172);
+}
+#exhibition .container .cake .start{
+	margin-top: 30px;
+	margin-left: -10%;
+	width: 40%;
+	height: 24px;
+	float: left;
+}
+#exhibition .container .cake .start > img[class^="start"]{
+	display: block;
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+#feedback{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	border: 1px solid black;
+	
+	background-image: url(../img/反馈.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#feedback h1{
+	margin-top: 50px;
+	width: 100%;
+	height: 20%;
+	font-size: 50px;
+	color: #FFFFFF;
+}
+#feedback form{
+	width: 100%;
+	height: 30%;
+}
+#feedback input[name="email"]{
+	display: block;
+	float: left;
+	margin-top: 20px;
+	margin-left:30%;
+	width: 36%;
+	height: 50%;
+	font-size: 20px;
+	opacity:0.5;
+	
+	transition: opacity 1.5s ease 0s;
+	-moz-transition: opacity 1.5s ease 0s;
+	-webkit-transition: opacity 1.5s ease 0s;
+	-moz-transition:  opacity 1.5s ease 0s;
+	
+}
+#feedback input[name="email"]:hover{
+	opacity:1;
+}
+#feedback input[type="submit"]{
+	display: block;
+	float: left;
+	margin-top: 20px;
+	width: 10%;
+	height: 50%;
+	font-size: 20px;
+	color: #FFFFFF;
+	background-color: rgb(240,120,24);
+	border: 1px solid transparent;
+	outline: none;
+}
+
+@media only screen  and (max-width: 800px) {
+	#exhibition .container{
+		display: grid;
+		margin: 0 auto;
+		margin-top: 2%;
+		width: 90%;
+		height: 96%;
+		/* 将该容器划分为4*3(行*列)的网格 */
+		grid-template-columns: 33% 33% 33%;
+	    grid-template-rows: 300px 300px 300px 300px;
+	}
+	#exhibition .container .cake:nth-child(1){
+		grid-column:1/3;
+	}
+	#exhibition .container .cake:nth-child(2){
+		grid-column:3/4;
+	}
+	#exhibition .container .cake:nth-child(3){
+		grid-column:1/2;
+	}
+	#exhibition .container .cake:nth-child(4){
+		grid-column:2/3;
+	}
+	#exhibition .container .cake:nth-child(5){
+		grid-column:3/4;
+	}
+	#exhibition .container .cake:nth-child(6){
+		grid-column:1/2;
+	}
+	#exhibition .container .cake:nth-child(7){
+		grid-column:2/3;
+	}
+	#exhibition .container .cake:nth-child(8){
+		grid-column:3/4;
+	}
+	#exhibition .container .cake:nth-child(9){
+		grid-column:1/2;
+	}
+	#exhibition .container .cake:nth-child(10){
+		grid-column:2/3;
+	}
+	
+}
